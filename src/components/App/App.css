@@ -26,3 +26,7 @@
   animation-name: example;
   animation-duration: .5s;
 }
+
+#response {
+  text-align: center;
+}
