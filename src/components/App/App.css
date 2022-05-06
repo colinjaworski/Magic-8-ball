@@ -6,3 +6,23 @@
 .Header {
   text-align: center;
 }
+
+@keyframes example {
+  0% {left: 0px;}
+  25% {left: 100px;}
+  50% {left: 0px;}
+  75% {left: 100px;}
+  100% {left: 0px;}
+}
+
+#eightBall {
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+#eightBall:hover {
+  position: relative;
+  animation-name: example;
+  animation-duration: .5s;
+}
