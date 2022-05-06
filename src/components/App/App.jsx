@@ -2,24 +2,21 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [creatureList, setCreatureList] = useState([
-    { name: 'Unicorn', origin: 'Britain' },
-    { name: 'Sphinx', origin: 'Egypt' },
-    { name: 'Jackalope', origin: 'America' }
-  ])
+
+  function eightBall() {
+    console.log('sup bitch?')
+  }
 
   return (
     <>
       <header className="Header">
-        <h1>React Mythical Creatures</h1>
+        <h1>Magic 8 ball time!</h1>
       </header>
       <div className="App">
         <div>
-          Splatting to the DOM looks like this:
-          <pre>
-            {/* We can use JSON.stringify() to dump raw data into our DOM */}
-            {JSON.stringify(creatureList)}
-          </pre>
+          <input type="text" />
+          <button onClick={eightBall}>Shake the ball!</button>
+
         </div>
       </div>
     </>
