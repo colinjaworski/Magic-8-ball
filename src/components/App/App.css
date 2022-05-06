@@ -6,6 +6,9 @@
 .Header {
   text-align: center;
 }
+#response {
+  text-align: center;
+}
 
 @keyframes example {
   0% {left: 0px;}
@@ -21,12 +24,13 @@
   display: block;
 }
 
-#eightBall:hover {
-  position: relative;
+#btnControl {
+  display: none;
   animation-name: example;
-  animation-duration: .5s;
 }
 
-#response {
-  text-align: center;
+#btnControl:checked + label > img {
+  animation-name: example;
+  animation-duration: .5s;
+  position: relative;
 }

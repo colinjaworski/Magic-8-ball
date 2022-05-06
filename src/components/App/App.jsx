@@ -37,9 +37,11 @@ function App() {
       </header>
       <div className="App">
         <div>
-          {/* <input type="text" /> */}  
-            <img onAnimationEnd={eightBallFunction} src="https://i5.walmartimages.com/asr/c3698a59-0624-4f8d-9e27-258139feb08c_1.9a6988dd9ed990c81dcab7afc9a37834.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" 
+          <input type="checkbox" id="btnControl" />
+          <label class="btn" for="btnControl">
+          <img onAnimationEnd={eightBallFunction} src="https://i5.walmartimages.com/asr/c3698a59-0624-4f8d-9e27-258139feb08c_1.9a6988dd9ed990c81dcab7afc9a37834.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
             id="eightBall" height={400} width={400} />
+            </label>
           <h1 id="response" >{eightBall}</h1>
 
         </div>
